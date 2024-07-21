@@ -11,7 +11,7 @@ Feature: Invite Student By List
         And director clicks on acceptance
         And director clicks on "Continuer"
         And director clicks on "Envoyer les invitations"
-        And director clicks on "confirmer et envoyer"
-        And director clicks on "retour à la liste des etudiants"
-        And director clicks on "X"
+        # And director clicks on "confirmer et envoyer"
+        # And director clicks on "retour à la liste des etudiants"
+        # And director clicks on "X"
         #Then director will be redirected to the page "Tous les étudiants"

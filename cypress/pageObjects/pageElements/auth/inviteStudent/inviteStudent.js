@@ -8,7 +8,6 @@ const selectorsInvitStudent = {
     invitSuccess: ".H4-Subtitle",
     btnRetour: ".mb-5 > .btn-Primary",
     errormessg: 'div.mt-2.mb-4 span',
-    
 };
 
 export default selectorsInvitStudent;

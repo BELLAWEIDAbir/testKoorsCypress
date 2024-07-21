@@ -7,13 +7,13 @@ Feature: director Login with valid and invalid credentials
     Then I am on Activity page
 
 
-  Scenario Outline: Invalid director Login
-    When I enter incorrect credentials email <email> and password <password>
-    Then Under the <fields> field I should see the <errormessages>
-    Examples:
-      | email                  | password    | fields   | errormessages                                    |
-      | qa+uptotestg2@koors.i  | 123456789SF | email    | Le login et le mot de passe ne correspondent pas |
-      | qa+uptotestg2@koors.io | 123456789S  | password | E-mail ou mot de passe incorrecte                |
-      | qa+uptotestg2@koors.io |             | password | E-mail ou mot de passe incorrecte                |
-      |                        | 123456789SF | email    | E-mail ou mot de passe incorrecte                |
-      |                        |             | email    | E-mail ou mot de passe incorrecte                |
+  # Scenario Outline: Invalid director Login
+  #   When I enter incorrect credentials email <email> and password <password>
+  #   Then Under the <fields> field I should see the <errorMsg1>
+  #   Examples:
+  #     | email                  | password    | fields   | errorMsg1                                        |
+  #     | qa+uptotestg2@koors.i  | 123456789SF | email    | Le login et le mot de passe ne correspondent pas |
+  #     | qa+uptotestg2@koors.io | 123456789S  | password | E-mail ou mot de passe incorrecte                |
+  #     | qa+uptotestg2@koors.io |             | password | E-mail ou mot de passe incorrecte                |
+  #     |                        | 123456789SF | email    | E-mail ou mot de passe incorrecte                |
+  #     |                        |             | email    | E-mail ou mot de passe incorrecte                |

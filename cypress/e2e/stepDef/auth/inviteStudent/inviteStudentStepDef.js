@@ -27,3 +27,5 @@ When(/^director leaves FirstName (.*) , LastName (.*) or mail (.*) empty/, (Name
 Then(/^I should see the invitation button disabled (.*)/, (fields) => {
     InviteStudent.verifyButtonDisabled(fields);
 });
+
+

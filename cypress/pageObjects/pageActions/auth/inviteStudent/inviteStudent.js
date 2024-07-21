@@ -31,7 +31,7 @@ class InviteStudent {
     //cy.get(selectorsInvitStudent.btnInviter).click();
   };
 
-  verifyErrorMessage(fields, errormessages) {
+  verifyErrorMessage(fields, errormessg) {
     const field = fields.toString();
     let selector;
     switch (true) {
@@ -44,7 +44,7 @@ class InviteStudent {
       default:
         throw new Error("Invalid field provided");
     }
-    cy.get(selector).should('contain', errormessages);
+    cy.get(selector).should('contain', errormessg);
   };
 
   // addStudentEmptyfield(Name1, LastName1, mail1) {

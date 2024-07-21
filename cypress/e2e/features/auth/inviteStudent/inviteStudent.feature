@@ -5,18 +5,18 @@ Feature: Invite Student
         Given I am on the director login page
         When I enter the email qa+uptotestg2@koors.io And the password 123456789SF
 
-   Scenario: Invite Student successfully
- When director adds a student with the information Bellaweid , Abir and the email
-Then I click the logout button
+    Scenario: Invite Student successfully
+        When director adds a student with the information Bellaweid , Abir and the email
+        Then I click the logout button
 
 
     Scenario Outline: Invalid Invite Student
-       When director adds a student FirstName <FirstName> , LastName <LastName> and a mail <mail>
-       Then Under the <fields> field I should see the <errormessages>
+        When director adds a student FirstName <FirstName> , LastName <LastName> and a mail <mail>
+        Then Under the <fields> field I should see the <errormessg>
         Then I click the logout button
 
         Examples:
-            | FirstName | LastName | mail                     | fields      | errormessages       |
+            | FirstName | LastName | mail                     | fields      | errormessg          |
             | test      | test     | insafmahdhaoui@gmail.com | mail        | L'email déja existe |
             | test      | test     | aaa                      | mailInvalid | L'email est invalid |
 

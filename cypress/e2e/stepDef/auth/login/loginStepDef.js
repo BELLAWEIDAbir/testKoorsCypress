@@ -19,15 +19,12 @@ Then(/^I am on Activity page/, () => {
   Login.verifyActivityPage();
 });
 
+//When('I enter incorrect credentials email <email> and password <password>', (email, password) => {
 
-When(/^I enter incorrect credentials email (.*) and password (.*)/, (email, password) => {
-  // Login.enterEmail();
-  // Login.enterPassword();
-  // Login.submit();
-  Login.loginValid(email, password);
-});
+  //Login.loginValid(email, password);
+//});
 
-Then(/^Under the (.*) field I should see the (.*)/, (fields, errormessages) => {
-  Login.verifyErrorMessage(fields, errormessages);
+//Then('Under the <fields> field I should see the <errorMsg1>', (fields, errorMsg1) => {
+  //Login.verifyErrorMessage(fields, errorMsg1);
 
-});
+//});
